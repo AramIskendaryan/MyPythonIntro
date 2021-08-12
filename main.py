@@ -42,3 +42,7 @@ print(s)
 
 print(90 in s)
 
+#lst =sdsdjasm,fnd
+
+
+
