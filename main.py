@@ -66,3 +66,43 @@ print(s1[1])
 # while i + 7 <= n:
 #     i = i + 7
 #     print(i)
+
+# Homework 3 ---------------------------------------------------------------------
+
+# Salaries
+# version1
+
+# number_of_employees = int(input('The number of employees: '))
+# salaries = []
+#
+# for i in range(number_of_employees):
+#     salaries.append(int(input('Enter the salary: ')))
+#     salaries.sort()
+# difference = salaries[-1] - salaries[0]
+#
+# print(f'The difference is:  {difference}')
+
+
+# Version 2
+
+# number_of_employees = int(input('The number of employees: '))
+# salaries = []
+#
+# for i in range(number_of_employees):
+#     salaries.append(int(input('Enter the salary: ')))
+# difference = max(salaries) - min(salaries)
+#
+# print(f'The difference is:  {difference}')
+
+
+# Boring numbers
+
+new_number = input()
+value = "Boring"
+if len(new_number) != 1:
+    first = new_number[0]
+    for i in range(len(new_number[1:])):
+        if i == first:
+            value = "interesting"
+            break
+print(value)
