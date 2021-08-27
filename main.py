@@ -112,17 +112,20 @@ print(s1[1])
 # Largest Number
 # version 1
 
+def my_sum(*args):
+    result = 0
+
+    for x in args:
+        result += x
+    return result
+
+
 l_number = input()
-len_1 = len(l_number)
 answer = "No"
 
-if len_1 != 1:
-    first = l_number[0]
-    for i in l_number[1:len_1-1]:
-        if i > first:
-            pass
-
-
+if len(l_number) != 1:
+    lst = list(l_number)
+    lst.sort(reverse=True)
 
 print(answer)
 
