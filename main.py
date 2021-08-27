@@ -97,12 +97,33 @@ print(s1[1])
 
 # Boring numbers
 
-new_number = input()
-value = "Boring"
-if len(new_number) != 1:
-    first = new_number[0]
-    for i in range(len(new_number[1:])):
-        if i == first:
-            value = "interesting"
-            break
-print(value)
+# new_number = input()
+# value = "Boring"
+# y = len(new_number)
+#
+# if len(new_number) != 1:
+#     first = new_number[0]
+#     for i in new_number[1:y-1]:
+#         if i != first:
+#             value = "interesting"
+#             break
+# print(value)
+
+# Largest Number
+# version 1
+
+l_number = input()
+len_1 = len(l_number)
+answer = "No"
+
+if len_1 != 1:
+    first = l_number[0]
+    for i in l_number[1:len_1-1]:
+        if i > first:
+            pass
+
+
+
+print(answer)
+
+
