@@ -97,21 +97,41 @@ print(s1[1])
 
 # Boring numbers
 
-# new_number = input()
+# number = int(input())
+# number_list = []
 # value = "Boring"
-# y = len(new_number)
+# if number // 10 != 0:
+#     while number // 10 != 0:
+#         number_list.append(number % 10)
+#         number = number // 10
+# number_list.append(number)
 #
-# if len(new_number) != 1:
-#     first = new_number[0]
-#     for i in new_number[1:y-1]:
-#         if i != first:
-#             value = "interesting"
-#             break
+# for i in number_list[1:]:
+#     first = number_list[0]
+#     if i != first:
+#         value = "Interesting"
+#         break
+#
 # print(value)
 
 # Largest Number
 # version 1
 
+"""
+number = int(input())
+number_list = []
+value = "No"
+
+if number // 10 !=0:
+    while number // 10 != 0:
+        number_list.append(number % 10)
+        number = number // 10
+number_list.append(number)
+right_list = number_list[-1::-1]
+print(right_list)
+number_list.sort(reverse=True)    # Սրանից ավել չի ստացվում 
+"""
+"""
 def my_sum(*args):
     result = 0
 
@@ -128,5 +148,89 @@ if len(l_number) != 1:
     lst.sort(reverse=True)
 
 print(answer)
+"""
+
+# Line Segment Intersection
+
+"""
+a1 = float(input())
+b1 = float(input())
+a2 = float(input())
+b2 = float(input())
 
 
+if a1 > b1:
+    a1, b1 = b1, a1
+if a2 > b2:
+    a2, b2 = b2, a2
+
+if a2 > b1 or a1 > b2:
+    print(0)
+elif a1 <= a2 < b1 <= b2:  # 1, 2.5, 3, 2
+    print(b1 - a2)
+elif a2 <= a1 < b2 < b1:   # 3, 2, 1, 2.5
+    print(b2 - a1)
+elif a1 == a2 and b1 == b2:
+    print(b1 - a2 + 1)
+elif a1 >= a2 and b1 <= b2: # 10, 0, 0.1, 0.2
+    print(b1 - a1)
+elif a2 >= a1 and b2 <= b1: # 0.1, 0.2, 10, 0
+    print(b2 - a2)
+"""
+
+#  Number Of Divisors
+"""
+x = int(input())
+divisors = 0
+
+for i in range(1, x+1):
+    if x % i == 0:
+        divisors += 1
+print(divisors)
+"""
+
+#  Quadratic Equation
+"""
+from math import sqrt
+a = float(input())
+b = float(input())
+c = float(input())
+
+
+if a == 0:
+    print("Non-quadratic equation")
+    if b != 0 and c != 0:
+        x1 = c/(-b)
+        print(x1)
+    if b == 0:
+        print("No solutions")
+        if c == 0:
+            print("Infinite solution")
+if a != 0:
+    D = b * b - 4 * a * c
+    if D < 0:
+        print("No solutions")
+    if D != 0:
+        print(f"Discriminant: {D}")
+    if D > 0:
+        x1 = (-b + sqrt(D))/2*a
+        x2 = (-b - sqrt(D))/2*a
+        if x1 != 0 and x2 != 0:
+            print(f"Two solutions: {x1}, {x2} ")
+"""
+# List 1
+"""
+lst = ['a', 'b', 'c', 'd']
+
+listToStr = ''.join(map(str, lst))
+
+print(listToStr)
+"""
+
+# List 2
+
+lst = [1, 1, 1, 0, 0, 0, 2, -2, -2]
+set_1 = set(lst)
+lst_1 = list(set_1)
+lst_1.sort()
+print(lst_1[1])
