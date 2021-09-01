@@ -205,7 +205,7 @@ print(divisors)
 """
 
 #  Quadratic Equation
-"""
+
 from math import sqrt
 a = float(input())
 b = float(input())
@@ -214,25 +214,27 @@ c = float(input())
 
 if a == 0:
     print("Non-quadratic equation")
-    if b != 0 and c != 0:
+    if b != 0:
         x1 = c/(-b)
         print(x1)
-    if b == 0 and c != 0:
+    elif b == 0 and c != 0:
         print("No solutions")
-        if c == 0:
-            print("Infinite solution")
+    else:
+        print("Infinite solution")
 if a != 0:
+    print("Quadratic equation")
     D = b ** 2 - 4 * a * c
+    print(f"Discriminant: {D}")
     if D < 0:
         print("No solutions")
-    if D != 0:
-        print(f"Discriminant: {D}")
+    if D == 0:
+        x1 = (-b + sqrt(D)) / 2 * a
+        print(f"One solution  {x1}")
     if D > 0:
         x1 = (-b + sqrt(D))/2*a
         x2 = (-b - sqrt(D))/2*a
-        if x1 != 0 and x2 != 0:
-            print(f"Two solutions: {x1}, {x2} ")
-"""
+        print(f"Two solutions: {x1}, {x2} ")
+
 
 # List 1
 """
