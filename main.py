@@ -96,23 +96,25 @@ print(s1[1])
 
 
 # Boring numbers
+"""
+number = int(input())
+number_list = []
+value = "Boring"
+if number // 10 != 0:
+    while number // 10 != 0:
+        number_list.append(number % 10)
+        number = number // 10
+number_list.append(number)
 
-# number = int(input())
-# number_list = []
-# value = "Boring"
-# if number // 10 != 0:
-#     while number // 10 != 0:
-#         number_list.append(number % 10)
-#         number = number // 10
-# number_list.append(number)
-#
-# for i in number_list[1:]:
-#     first = number_list[0]
-#     if i != first:
-#         value = "Interesting"
-#         break
-#
-# print(value)
+for i in number_list[1:]:
+    first = number_list[0]
+    if i != first:
+        value = "Interesting"
+        break
+
+print(value)
+"""
+
 
 # Largest Number
 # version 1
@@ -130,8 +132,7 @@ number_list.append(number)
 right_list = number_list[-1::-1]
 print(right_list)
 number_list.sort(reverse=True)    # Սրանից ավել չի ստացվում 
-"""
-"""
+
 def my_sum(*args):
     result = 0
 
@@ -149,6 +150,20 @@ if len(l_number) != 1:
 
 print(answer)
 """
+
+# Largest number 2
+
+# x = int(input())
+#
+# while x > 0:
+#     if x < 10:
+#         print("No")
+#         break
+#     elif (x % 10) > ((x // 10) % 10):
+#         print("Yes")
+#         break
+#     else:
+#         x = x // 10
 
 # Line Segment Intersection
 
@@ -202,12 +217,12 @@ if a == 0:
     if b != 0 and c != 0:
         x1 = c/(-b)
         print(x1)
-    if b == 0:
+    if b == 0 and c != 0:
         print("No solutions")
         if c == 0:
             print("Infinite solution")
 if a != 0:
-    D = b * b - 4 * a * c
+    D = b ** 2 - 4 * a * c
     if D < 0:
         print("No solutions")
     if D != 0:
@@ -218,6 +233,7 @@ if a != 0:
         if x1 != 0 and x2 != 0:
             print(f"Two solutions: {x1}, {x2} ")
 """
+
 # List 1
 """
 lst = ['a', 'b', 'c', 'd']
@@ -229,8 +245,8 @@ print(listToStr)
 
 # List 2
 
-lst = [1, 1, 1, 0, 0, 0, 2, -2, -2]
-set_1 = set(lst)
-lst_1 = list(set_1)
-lst_1.sort()
-print(lst_1[1])
+# lst = [1, 1, 1, 0, 0, 0, 2, -2, -2]
+# set_1 = set(lst)
+# lst_1 = list(set_1)
+# lst_1.sort()
+# print(lst_1[1])
