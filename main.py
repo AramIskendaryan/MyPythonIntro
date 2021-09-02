@@ -269,19 +269,52 @@ print(listToStr)
 
 # Index Sum
 
-N = int(input('Enter N parameter: '))
-seq_a = []
-seq_ind = []
-for i in range(N):
-    seq_a.append(float(input()))
-M = int(input("Enter M parameter: "))
-for i in range(M):
-    seq_ind.append(int(input()))
+# N = int(input('Enter N parameter: '))
+# seq_a = []
+# seq_ind = []
+# for i in range(N):
+#     seq_a.append(float(input()))
+# M = int(input("Enter M parameter: "))
+# for i in range(M):
+#     seq_ind.append(int(input()))
+#
+# my_sum = 0
+#
+# for i in seq_ind:
+#     my_sum += seq_a[i]
+# print(my_sum)
 
-my_sum = 0
-
-for i in seq_ind:
-    my_sum += seq_a[i]
-print(my_sum)
+# The most divisor-rich number
 
 
+# def divisor(x):
+#     divisors = 0
+#     for i in range(1, x+1):
+#         if x % i == 0:
+#             divisors += 1
+#     return divisors
+#
+#
+# a = int(input())
+# b = int(input())
+# most_div = a
+# for j in range(a, b+1):
+#     if divisor(j) > divisor(most_div):
+#         most_div = j
+#
+# print(most_div)
+
+
+
+
+
+
+"""
+x = int(input())
+divisors = 0
+
+for i in range(1, x + 1):
+    if x % i == 0:
+        divisors += 1
+print(divisors)
+"""
