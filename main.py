@@ -206,34 +206,34 @@ print(divisors)
 
 #  Quadratic Equation
 
-from math import sqrt
-a = float(input())
-b = float(input())
-c = float(input())
-
-
-if a == 0:
-    print("Non-quadratic equation")
-    if b != 0:
-        x1 = c/(-b)
-        print(x1)
-    elif b == 0 and c != 0:
-        print("No solutions")
-    else:
-        print("Infinite solution")
-if a != 0:
-    print("Quadratic equation")
-    D = b ** 2 - 4 * a * c
-    print(f"Discriminant: {D}")
-    if D < 0:
-        print("No solutions")
-    if D == 0:
-        x1 = (-b + sqrt(D)) / 2 * a
-        print(f"One solution  {x1}")
-    if D > 0:
-        x1 = (-b + sqrt(D))/2*a
-        x2 = (-b - sqrt(D))/2*a
-        print(f"Two solutions: {x1}, {x2} ")
+# from math import sqrt
+# a = float(input())
+# b = float(input())
+# c = float(input())
+#
+#
+# if a == 0:
+#     print("Non-quadratic equation")
+#     if b != 0:
+#         x1 = c/(-b)
+#         print(x1)
+#     elif b == 0 and c != 0:
+#         print("No solutions")
+#     else:
+#         print("Infinite solution")
+# if a != 0:
+#     print("Quadratic equation")
+#     D = b ** 2 - 4 * a * c
+#     print(f"Discriminant: {D}")
+#     if D < 0:
+#         print("No solutions")
+#     if D == 0:
+#         x1 = (-b + sqrt(D)) / 2 * a
+#         print(f"One solution  {x1}")
+#     if D > 0:
+#         x1 = (-b + sqrt(D))/2*a
+#         x2 = (-b - sqrt(D))/2*a
+#         print(f"Two solutions: {x1}, {x2} ")
 
 
 # List 1
@@ -245,10 +245,43 @@ listToStr = ''.join(map(str, lst))
 print(listToStr)
 """
 
-# List 2
-
+# # List 2
+#
 # lst = [1, 1, 1, 0, 0, 0, 2, -2, -2]
-# set_1 = set(lst)
-# lst_1 = list(set_1)
-# lst_1.sort()
-# print(lst_1[1])
+# # set_1 = set(lst)
+# # lst_1 = list(set_1)
+# # lst_1.sort()
+# # print(lst_1[1])
+#
+# min1 = lst[0]
+# min2 = lst[1]
+#
+# for el in lst:
+#     if el < min1:
+#         min2 = min1
+#         min1 = el
+#     elif min1 < el < min2:
+#         max2 = el
+#
+# print(min2)
+
+#  Homework 4 ------------------------------------------------------------------
+
+# Index Sum
+
+N = int(input('Enter N parameter: '))
+seq_a = []
+seq_ind = []
+for i in range(N):
+    seq_a.append(float(input()))
+M = int(input("Enter M parameter: "))
+for i in range(M):
+    seq_ind.append(int(input()))
+
+my_sum = 0
+
+for i in seq_ind:
+    my_sum += seq_a[i]
+print(my_sum)
+
+
