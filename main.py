@@ -306,10 +306,18 @@ def divisor(x):
 
 # Tree
 
-numb_of_star = int(input())
-bs = 0
-for i in range(1, numb_of_star+1):
-    if i % 2 == 1:
-        bs = int((numb_of_star-i)/2)
-        print((bs * ' '), i * "*", (bs * ' '))
+# numb_of_star = int(input())
+# bs = 0
+# for i in range(1, numb_of_star+1):
+#     if i % 2 == 1:
+#         bs = int((numb_of_star-i)/2)
+#         print((bs * ' '), i * "*", (bs * ' '))
+#
+#
+# for i in range(1, numb_of_star+1, 2):
+#     bs = int((numb_of_star-i)/2)
+#     print((bs * ' '), i * "*", (bs * ' '))
+
+
+#  The Goldbach Conjecture
 
