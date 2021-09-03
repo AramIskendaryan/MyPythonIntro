@@ -306,29 +306,10 @@ def divisor(x):
 
 # Tree
 
-bottom = int(input())
-number_of_star = 1
-#bs_1 = int((bottom - 1) / 2)
-star = '*'
-if number_of_star == 1:
-    bs_1 = int((bottom - 1) / 2)
-    print(' ' * bs_1, '\b', '*', '\b', ' ' * bs_1)
-    print('', '*' * bottom)
-# for i in range(1, bottom+1):
-#     if i % 2 != 0:
-#         bottom -= 2
-#
-#         print(bottom, bs_1)
-#
-#
-# # print(bs_1)
-# print('!' * bs_1, '\b', '*', '\b', '!' * bs_1)
-
-
-
-
-
-
-
-
+numb_of_star = int(input())
+bs = 0
+for i in range(1, numb_of_star+1):
+    if i % 2 == 1:
+        bs = int((numb_of_star-i)/2)
+        print((bs * ' '), i * "*", (bs * ' '))
 
