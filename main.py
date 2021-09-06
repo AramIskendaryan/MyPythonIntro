@@ -321,3 +321,56 @@ def divisor(x):
 
 #  The Goldbach Conjecture
 
+def prime(x):
+    switch = False
+    for i in range(2, x // 2):
+        if x % i == 0:
+            switch = True
+    if switch:
+        return 0
+    else:
+        return 1
+
+
+n = int(input())
+z = 0
+for j in range(2, n):
+    if prime(j) == 1:
+        z = n - j
+        if prime(z) == 1:
+            print(j, z)
+            break
+
+
+# Palindrome numbers
+
+x = str(input())
+y = str(input())
+for i in range(int(x), int(y)):
+    x = str(i)
+    if int(x[-1::-1]) - int(x) == 0:
+        print(x)
+
+# Suffix Sums
+
+A = [1.5, 2.5, 3]
+B = []
+
+for i in range(0, len(A)-1):
+    B.append(float(sum(A)))
+    A.pop(0)
+B.append(float(sum(A)))
+print(B)
+
+# Cyclic shift
+
+N = 3
+k = 1000
+seq = [9, 1, 2]
+
+for i in range(1, k+1):
+    x = seq.pop()
+
+    seq.insert(0, x)
+
+print(seq)
